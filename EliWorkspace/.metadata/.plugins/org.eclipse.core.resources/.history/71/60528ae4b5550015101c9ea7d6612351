@@ -1,0 +1,29 @@
+package com.eli;
+
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+public class Project21 {
+
+	public static void main(String[] args) {
+		GregorianCalendar g = new GregorianCalendar();
+		//g.add(Calendar.DAY_OF_MONTH, 100);
+		int dayOfMonth = g.get(Calendar.DAY_OF_MONTH); 
+        int month = g.get(Calendar.MONTH); 
+        int year = g.get(Calendar.YEAR); 
+        int weekday = g.get(Calendar.DAY_OF_WEEK);
+        System.out.printf("A Hundred Days From Now Will Be %d/%d/%d which is the %d day of the week",month+1,dayOfMonth,year,weekday);   
+        
+        
+        GregorianCalendar b = new GregorianCalendar(1999, Calendar.SEPTEMBER ,21);
+        int bday = b.get(Calendar.DAY_OF_WEEK);
+        String dayname;
+        switch (bday)
+        {
+        case 1:
+        	dayname = "Sunday";
+        	break;
+        }
+	}
+
+}
